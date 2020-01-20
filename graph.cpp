@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 Programmer: Jerusalem Moore
 Description: graph functions implementation
@@ -91,3 +92,14 @@ void buildSSPTree(string source){
 Graph::Vertex::Vertex(){
 
 }
+=======
+/*
+Programmer: Jerusalem Moore
+Description: graph functions implementation
+*/
+#include "graph.h"
+#include <string>
+Graph::Graph(){
+  currentSource = "default";
+}
+>>>>>>> c0fec4567fe2ca09f7fe126566fd4e2898fb17b9
