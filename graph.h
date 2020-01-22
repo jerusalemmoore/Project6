@@ -27,32 +27,20 @@ private:
   public:
     Vertex();//key must stay updated when key decreases, use for path
     ~Vertex();
-<<<<<<< HEAD
     Vertex(string pi, int key);
     string pi;//this is used for dijkstra alg
     int key;//this is also for  dijkstra alg
-=======
-    string pi;
-    int key;
->>>>>>> c0fec4567fe2ca09f7fe126566fd4e2898fb17b9
   };
   class Neighbor{
   public:
     Neighbor();
     ~Neighbor();
-<<<<<<< HEAD
     Neighbor(string name, int weight);
+    bool operator<(const Neighbor& n) const{return name < n.name;};
     string name;
     int weight;
   };
   map<string, Vertex> vertices;//map holds vertex names and a blank vertex
   map<string, vector<Neighbor>> adjList;//map holds a vertex name and a list
                                         //of neighbors
-=======
-    string name;
-    int weight;
-  };
-  map<string, Vertex> vertices;
-  map<string, vector<Neighbor>> adjList;
->>>>>>> c0fec4567fe2ca09f7fe126566fd4e2898fb17b9
 };

@@ -56,7 +56,7 @@ priiority(found in the root of the heap), and pulls it out of the
 the queue*/
 string minPriorityQueue::extractMin(){
   if(minHeap.size() == 0){
-    return "Error, empty heap";
+    return "Error";
   }
   else{
 
@@ -130,6 +130,6 @@ minPriorityQueue::Element::Element(string id, int key){
   this->key = key;
 }
 minPriorityQueue::Element::~Element(){
-  
+
 
 }
